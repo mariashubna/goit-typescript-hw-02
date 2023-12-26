@@ -3,8 +3,10 @@
 let age: number = 50;
 let name: string = 'Max';
 let toggle: boolean = true;
-let empty = null;
+let empty: null = null;
 let notInitialize: any;
 let callback: unknown = (a) => { return 100 + a };
+
+
 
 export {};
