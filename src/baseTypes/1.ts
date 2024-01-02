@@ -4,9 +4,15 @@ let age: number = 50;
 let name: string = 'Max';
 let toggle: boolean = true;
 let empty: null = null;
-let notInitialize: any;
-let callback: unknown = (a) => { return 100 + a };
+let notInitialize: undefined;
 
+let callback = (a: number | string) => {
+if (typeof a === 'number') {
+    return 100 + a
+  } else {
+    return 100 + a.toString();
+  }
+}
 
 
 export {};
